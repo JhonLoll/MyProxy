@@ -16,7 +16,7 @@ def client(h, port):
     msg = ("")
     while msg != ("Fim"):
         msg = input("Entre com a mensagem: ")
-        s.sendall(msg)# Envia dados
+        s.sendto(msg)# Envia dados
         var = s.recv(1024)
         print(var)
     s.close()  # Termina conexao
