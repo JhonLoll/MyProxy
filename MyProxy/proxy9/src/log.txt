@@ -1,0 +1,15 @@
+Servidor Iniciado: Mon Dec  9 13:38:19 2019
+ERROR 404Mon Dec  9 13:46:31 2019
+ERROR 404Mon Dec  9 13:52:29 2019
+Servidor Iniciado: Mon Dec  9 14:01:59 2019
+Mensagem não permitida, fechando conexãoMon Dec  9 14:02:05 2019
+Servidor Iniciado: Mon Dec  9 14:02:54 2019
+Servidor Iniciado: Mon Dec  9 14:05:12 2019
+Servidor Iniciado: Mon Dec  9 14:06:46 2019
+Servidor Iniciado: Mon Dec  9 14:07:52 2019
+Servidor Iniciado: Mon Dec  9 14:11:10 2019
+Servidor Iniciado: Mon Dec  9 14:12:42 2019
+Servidor Iniciado: Mon Dec  9 14:14:00 2019
+Recebido: oi : Mon Dec  9 14:14:09 2019Servidor Iniciado: Mon Dec  9 14:17:00 2019
+Recebido: alou : Mon Dec  9 14:17:46 2019ERROR 404Mon Dec  9 14:17:53 2019
+Recebido: proxy : Mon Dec  9 14:17:53 2019Recebido: block : Mon Dec  9 14:40:25 2019Recebido:  : Mon Dec  9 14:44:45 2019
