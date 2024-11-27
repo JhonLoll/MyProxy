@@ -1,7 +1,7 @@
 import socket
 import time
 
-host = "0.0.0.0"
+host = "10.113.50.208"
 port = 3128
 
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
