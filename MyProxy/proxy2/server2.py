@@ -3,7 +3,7 @@ from threading import Thread
 
 L = []
 
-def ConversaSimultanea(client_socket, client_index):
+def ConversaSimultanea(client_socket):
     while True:
         try:
             mensagem = client_socket.recv(5000).decode()  # Decodifica a mensagem recebida
@@ -11,17 +11,17 @@ def ConversaSimultanea(client_socket, client_index):
                 break
             
             # Envia a mensagem para todos os outros clientes
-            for i, conn in enumerate(L):
-                if i != client_index:  # Não envia para o próprio cliente
+            for conn in L:
+                if conn != client_socket:  # Não envia para o próprio cliente
                     conn.sendall(mensagem.encode())  # Codifica a mensagem antes de enviar
         except Exception as e:
-            print(f"Erro na conexão do cliente {client_index}: {e}")
+            print(f"Erro na conexão: {e}")
             break
 
     client_socket.close()  # Fecha a conexão após a conversa
     L.remove(client_socket)  # Remove o cliente da lista
 
-h = "0.0.0.0"
+h = "10.113.50.208"
 port = 3128
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -37,5 +37,4 @@ while True:
     print(f"Cliente conectado: {addr}")
 
     # Inicia uma nova thread para cada cliente
-    client_index = len(L) - 1
-    Thread(target=ConversaSimultanea, args=(conn, client_index)).start()
+    Thread(target=ConversaSimultanea, args=(conn,)).start()

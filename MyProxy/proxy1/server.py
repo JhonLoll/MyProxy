@@ -13,7 +13,7 @@ def ConversaSimultanea(a, b):
         L[b].sendall(mensagem.encode())  # Codifica a mensagem antes de enviar
     L[a].close()  # Fecha a conexão após a conversa
 
-h = "0.0.0.0"
+h = "10.113.50.208"
 port = 3128
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
